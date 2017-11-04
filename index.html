@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<!-- ANIMATE CSS -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/animate.min.css"> -->
+	  <!-- Normalize CSS-->
+  	<!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <!-- Magnific Popup-->
+  	<!-- <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css"> -->
+    <!-- Owl carousel-->
+  	<!-- <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css"> -->
+	<!-- FONTAWESOME-->
+	<!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<!-- BOOTSTRAP 4 -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<!-- CUSTOM -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+
+<div class="container px-5 py-5 text-center">
+  <h1>Bootstrap 4 Grid System Previewer</h1>
+  <p class="px-sm-5 pt-3">Please note, this tool is meant for previewing the layout for Bootstrap grid columns. While it does support the "xs" column specification, this is a carry-over from Bootstrap 3 and is no longer required. I have future plans to enable support for Bootstrap 4's "mx-auto", "mr-auto", and "ml-auto" margin classes for positioning, as well.<br><br>You should see colored boxes representing the layout of the given divs in the respective screen size categories below. If any or all of the boxes remain empty, you have entered an invalid column class.</p>
+  <h6 class="px-sm-5 pt-4">As an example, try entering "col-12 col-md-6 col-xl-3" in the first input field<br> and "col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4" in the second.</h6>
+</div>
+
+<div class="container text-center text-white pt-5">
+  <form>
+    <div class="form-group">
+    	<label>&ltdiv class='</label>
+      	<input type="text" class="form-control" id="div1" placeholder="eg. col-12 col-md-6 col-xl-4">
+      	<label>'&gt</label>
+    </div>
+    <div class="form-group">
+    	<label>&ltdiv class='</label>
+      	<input type="text" class="form-control" id="div2" placeholder="eg. col-12 col-md-6 col-xl-4">
+      	<label>'&gt</label>
+    </div>
+    <div class="form-group">
+    	<label>&ltdiv class='</label>
+      	<input type="text" class="form-control" id="div3" placeholder="eg. col-12 col-md-6 col-xl-4">
+      	<label>'&gt</label>
+    </div>
+    <div class="form-group">
+    	<label>&ltdiv class='</label>
+      	<input type="text" class="form-control" id="div4" placeholder="eg. col-12 col-md-6 col-xl-4">
+      	<label>'&gt</label>
+    </div>
+    <div class="form-group">
+    	<label>&ltdiv class='</label>
+      	<input type="text" class="form-control" id="div5" placeholder="eg. col-12 col-md-6 col-xl-4">
+      	<label>'&gt</label>
+    </div>
+    <div class="form-group">
+    	<label>&ltdiv class='</label>
+      	<input type="text" class="form-control" id="div6" placeholder="eg. col-12 col-md-6 col-xl-4">
+      	<label>'&gt</label>
+    </div>
+    <button type="button" onclick="interpret()" class="btn btn-primary d-block w-25 mx-auto">Submit</button>
+  </form>
+</div>
+
+<div class="solutions container-fluid py-5">
+  	<div class="row">
+	    <div class="xs ml-auto mr-sm-5">
+	    	<h6 class="text-center text-white">xs</h6>
+	    	<div class="row"></div>
+	    </div>
+	    <div class="sm mr-auto ml-sm-5">
+	    	<h6 class="text-center text-white">sm</h6>
+	    	<div class="row"></div>
+	    </div>
+    </div>
+    <div class="row">
+	    <div class="md mx-auto mx-lg-0 ml-lg-auto mr-lg-4">
+	    	<h6 class="text-center text-white">md</h6>
+	    	<div class="row"></div>
+	    </div>
+	    <div class="lg mx-auto mx-lg-0 mr-lg-auto ml-lg-4">
+	    	<h6 class="text-center text-white">lg</h6>
+	    	<div class="row"></div>
+	    </div>
+    </div>
+    <div class="row">
+	    <div class="xl mx-auto">
+	    	<h6 class="text-center text-white">xl</h6>
+	    	<div class="row"></div>
+	    </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- SCRIPTS -->
+	<!-- JQUERY -->
+  <script src="js/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script> -->
+	<!-- BOOTSTRAP -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<!-- CUSTOM -->
+	<!-- Instafeed-->
+	<!-- <script src="plugins/instafeed/instafeed.min.js"></script> -->
+	<!-- Magnific Popup-->
+	<!-- <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script> -->
+	<!-- One Page Nav-->
+	<!-- <script src="plugins/one-page-nav/jquery.nav.js"></script> -->
+	<!-- Owl Carousel-->
+	<!-- <script src="plugins/owl-carousel/owl.carousel.min.js"></script> -->
+	<!-- Shuffle-->
+	<!-- <script src="plugins/shuffle/jquery.shuffle.modernizr.min.js"></script> -->
+	<!-- Twitter Fetcher-->
+	<!-- <script src="plugins/twitter-fetcher/twitterFetcher_min.js"></script> -->
+	<!-- Validate-->
+	<script src="plugins/jquery-validate/jquery.validate.min.js"></script>
+	<!-- WOW-->
+	<!-- <script src="plugins/wowjs/wow.min.js"></script> -->
+	<!-- SKROLLR-->
+	<!-- <script src="plugins/skrollr/skrollr.js"></script>  -->
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
